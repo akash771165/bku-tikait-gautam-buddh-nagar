@@ -35,15 +35,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           
           {/* Col 1: Organization Branding (5 cols) */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-emerald-700 flex items-center justify-center text-white shrink-0">
-                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M7 20h10" />
-                  <path d="M10 20c0-3.5 2-6 2-9" />
-                  <path d="M12 11c1-2 3.5-3 6.5-3-1 3-3.5 5.5-6.5 6" />
-                  <path d="M12 11c-1-2-3.5-3-6.5-3 1 3 3.5 5.5 6.5 6" />
-                </svg>
-              </div>
+            <div className="flex items-center gap-3.5">
+              <img
+                src="/bku-tikait-logo.png"
+                alt="भारतीय किसान यूनियन (टिकैत) जनपद गौतम बुद्ध नगर लोगो"
+                className="w-13 h-13 sm:w-14 sm:h-14 object-contain shrink-0"
+                loading="lazy"
+              />
               <div>
                 <h3 className="text-lg font-bold text-white tracking-tight">
                   {siteMeta.orgName}

@@ -4,6 +4,7 @@
  */
 
 export const siteAssets = {
+  officialLogo: "/bku-tikait-logo.png",
   heroLandscape: "/src/assets/images/hero_farmer_fields_1790310298786.jpg",
   dialogueAssembly: "/src/assets/images/kisan_dialogue_assembly_1790310315067.jpg",
   ruralFields: "/src/assets/images/rural_agriculture_fields_1790310327564.jpg",

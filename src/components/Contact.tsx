@@ -63,10 +63,22 @@ export const Contact: React.FC = () => {
             
             {/* Official Contact Box */}
             <div className="bg-white p-6 rounded-xl border border-stone-200 shadow-2xs">
-              <h3 className="text-base font-bold text-stone-900 mb-4 pb-2 border-b border-stone-100 flex items-center gap-2">
-                <ShieldCheck className="w-5 h-5 text-emerald-700" />
-                <span>आधिकारिक संपर्क माध्यम</span>
-              </h3>
+              <div className="flex items-center gap-3.5 mb-4 pb-3 border-b border-stone-100">
+                <img
+                  src="/bku-tikait-logo.png"
+                  alt="भारतीय किसान यूनियन (टिकैत) जनपद गौतम बुद्ध नगर लोगो"
+                  className="w-12 h-12 object-contain shrink-0"
+                  loading="lazy"
+                />
+                <div>
+                  <h3 className="text-base font-bold text-stone-900 leading-tight">
+                    आधिकारिक संपर्क माध्यम
+                  </h3>
+                  <span className="text-xs text-stone-500 font-medium">
+                    {siteMeta.district}
+                  </span>
+                </div>
+              </div>
 
               <div className="space-y-4 text-sm">
                 <div>

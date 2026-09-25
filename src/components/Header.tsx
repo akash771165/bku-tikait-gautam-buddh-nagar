@@ -77,20 +77,18 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate, onOpenJ
           <a
             href="/"
             onClick={(e) => handleLinkClick(e, '/')}
-            className="flex items-center gap-3 group text-left"
+            className="flex items-center gap-2.5 sm:gap-3 group text-left"
           >
-            {/* Agriculture Emblem / Logo Seal */}
-            <div className="w-12 h-12 rounded-xl bg-emerald-700 flex items-center justify-center text-white shadow-xs shrink-0 border border-emerald-800 group-hover:bg-emerald-800 transition-colors">
-              <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M7 20h10" />
-                <path d="M10 20c0-3.5 2-6 2-9" />
-                <path d="M12 11c1-2 3.5-3 6.5-3-1 3-3.5 5.5-6.5 6" />
-                <path d="M12 11c-1-2-3.5-3-6.5-3 1 3 3.5 5.5 6.5 6" />
-              </svg>
-            </div>
+            {/* Official BKU Tikait Logo */}
+            <img
+              src="/bku-tikait-logo.png"
+              alt="भारतीय किसान यूनियन (टिकैत) जनपद गौतम बुद्ध नगर लोगो"
+              className="w-11 h-11 sm:w-14 sm:h-14 object-contain shrink-0 drop-shadow-xs transition-transform group-hover:scale-105 duration-200"
+              loading="eager"
+            />
             
             <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-bold text-stone-900 tracking-tight leading-tight">
+              <span className="text-base sm:text-xl font-bold text-stone-900 tracking-tight leading-tight">
                 {siteMeta.orgName}
               </span>
               <span className="text-xs sm:text-sm font-semibold text-emerald-800 flex items-center gap-1.5 mt-0.5">

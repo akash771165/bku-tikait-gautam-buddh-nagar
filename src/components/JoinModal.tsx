@@ -29,16 +29,23 @@ export const JoinModal: React.FC<JoinModalProps> = ({
       >
         {/* Header */}
         <div className="flex items-start justify-between pb-4 border-b border-stone-100">
-          <div>
-            <span className="text-xs font-semibold text-emerald-800 uppercase tracking-wider block">
-              सहभागिता एवं संपर्क
-            </span>
-            <h3 className="text-xl font-bold text-stone-900 mt-1">
-              हमसे जुड़ें
-            </h3>
-            <p className="text-xs text-stone-600 mt-1">
-              {siteMeta.orgName} — {siteMeta.district}
-            </p>
+          <div className="flex items-center gap-3">
+            <img
+              src="/bku-tikait-logo.png"
+              alt="भारतीय किसान यूनियन (टिकैत) जनपद गौतम बुद्ध नगर लोगो"
+              className="w-12 h-12 object-contain shrink-0"
+            />
+            <div>
+              <span className="text-xs font-semibold text-emerald-800 uppercase tracking-wider block">
+                सहभागिता एवं संपर्क
+              </span>
+              <h3 className="text-xl font-bold text-stone-900">
+                हमसे जुड़ें
+              </h3>
+              <p className="text-xs text-stone-600 mt-0.5">
+                {siteMeta.orgName} — {siteMeta.district}
+              </p>
+            </div>
           </div>
 
           <button
