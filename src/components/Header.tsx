@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Share2, MapPin, ExternalLink } from 'lucide-react';
+import { Menu, X, Share2, MapPin, ExternalLink, Mail } from 'lucide-react';
 import { siteMeta } from '../config/siteData';
 import { socialLinks } from '../config/socialLinks';
 
@@ -55,6 +55,14 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate, onOpenJ
           </span>
           <div className="hidden sm:flex items-center gap-4 text-emerald-200">
             <span>{siteMeta.regionContext}</span>
+            <a
+              href={`mailto:${siteMeta.officialEmail}`}
+              className="inline-flex items-center gap-1 hover:text-white transition-colors"
+              title="आधिकारिक ईमेल"
+            >
+              <Mail className="w-3 h-3 text-emerald-400" />
+              <span>{siteMeta.officialEmail}</span>
+            </a>
             <a
               href={socialLinks.googleMaps}
               target="_blank"
@@ -186,6 +194,13 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate, onOpenJ
               >
                 हमसे जुड़ें (सोशल मीडिया व व्हाट्सएप)
               </button>
+              <a
+                href={`mailto:${siteMeta.officialEmail}`}
+                className="w-full py-2 text-center text-sm font-medium text-emerald-800 bg-emerald-50 hover:bg-emerald-100 rounded-lg flex items-center justify-center gap-1.5 transition-colors border border-emerald-200"
+              >
+                <Mail className="w-4 h-4 text-emerald-700" />
+                <span>{siteMeta.officialEmail}</span>
+              </a>
               <a
                 href={socialLinks.googleMaps}
                 target="_blank"

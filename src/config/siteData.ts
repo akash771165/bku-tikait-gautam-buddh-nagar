@@ -55,7 +55,7 @@ export const siteMeta = {
   structureNote: "यह सामान्य संगठनात्मक प्रस्तुति है। विशिष्ट संगठनात्मक पद एवं संरचना की जानकारी उपलब्ध आधिकारिक स्रोत के अनुसार प्रदर्शित की जाएगी।",
   schemeDisclaimer: "सरकारी योजनाओं की पात्रता, नियम, आवेदन प्रक्रिया एवं वर्तमान स्थिति के लिए संबंधित आधिकारिक सरकारी स्रोत से जानकारी की पुष्टि करें।",
   contactNote: "कृपया आवश्यक एवं सत्यापित जानकारी ही साझा करें।",
-  emailPlaceholder: "Official Email — जल्द उपलब्ध होगा",
+  officialEmail: "bkutikaitgbnofficial@gmail.com",
 };
 
 export const quickInformationCards: QuickCard[] = [
@@ -281,7 +281,7 @@ export const faqList: FAQItem[] = [
   {
     id: "faq-3",
     question: "3. संगठन से संपर्क कैसे करें?",
-    answer: "आप वेबसाइट के 'संपर्क करें' फॉर्म, आधिकारिक सोशल मीडिया प्लेटफॉर्म (Instagram, YouTube, X) तथा हमारे आधिकारिक WhatsApp Channel के माध्यम से संगठन से जुड़ सकते हैं। इसके अतिरिक्त Google Maps पर कार्यालय स्थान भी उपलब्ध है।",
+    answer: "आप वेबसाइट के 'संपर्क करें' फॉर्म, आधिकारिक ईमेल (bkutikaitgbnofficial@gmail.com), आधिकारिक सोशल मीडिया प्लेटफॉर्म (Instagram, YouTube, X) तथा हमारे आधिकारिक WhatsApp Channel के माध्यम से संगठन से जुड़ सकते हैं। इसके अतिरिक्त Google Maps पर कार्यालय स्थान भी उपलब्ध है।",
   },
   {
     id: "faq-4",

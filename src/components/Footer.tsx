@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, ExternalLink, Instagram, Youtube, MessageCircle } from 'lucide-react';
+import { MapPin, ExternalLink, Instagram, Youtube, MessageCircle, Mail } from 'lucide-react';
 import { siteMeta } from '../config/siteData';
 import { socialLinks } from '../config/socialLinks';
 
@@ -60,9 +60,19 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               जनपद गौतम बुद्ध नगर में संगठनात्मक गतिविधियों, किसान हित से जुड़े विषयों तथा सार्वजनिक जानकारी के लिए आधिकारिक डिजिटल मंच।
             </p>
 
-            <div className="pt-2 text-xs text-stone-400 flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-emerald-500 shrink-0" />
-              <span>Greater Noida, दादरी, जेवर (उत्तर प्रदेश)</span>
+            <div className="pt-2 space-y-1.5 text-xs text-stone-400">
+              <div className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-emerald-500 shrink-0" />
+                <span>Greater Noida, दादरी, जेवर (उत्तर प्रदेश)</span>
+              </div>
+              <a
+                href={`mailto:${siteMeta.officialEmail}`}
+                className="flex items-center gap-2 hover:text-emerald-400 transition-colors"
+                title="आधिकारिक ईमेल"
+              >
+                <Mail className="w-4 h-4 text-emerald-500 shrink-0" />
+                <span>{siteMeta.officialEmail}</span>
+              </a>
             </div>
           </div>
 
@@ -92,6 +102,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </h4>
             
             <div className="flex flex-col gap-2.5 text-xs sm:text-sm">
+              <a
+                href={`mailto:${siteMeta.officialEmail}`}
+                className="flex items-center gap-2 text-stone-300 hover:text-emerald-400 transition-colors"
+              >
+                <Mail className="w-4 h-4 text-emerald-500" />
+                <span>आधिकारिक ईमेल</span>
+                <ExternalLink className="w-3 h-3 opacity-60 ml-auto" />
+              </a>
+
               <a
                 href={socialLinks.whatsapp}
                 target="_blank"

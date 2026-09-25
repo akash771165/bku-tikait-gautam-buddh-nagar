@@ -178,6 +178,27 @@ export const JoinModal: React.FC<JoinModalProps> = ({
             <span className="text-xs font-semibold text-emerald-800">जाएँ →</span>
           </button>
 
+          {/* Direct Email link */}
+          <a
+            href={`mailto:${siteMeta.officialEmail}`}
+            className="p-3.5 rounded-xl bg-stone-50 hover:bg-stone-100 border border-stone-200 flex items-center justify-between transition-colors group cursor-pointer"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0">
+                <Mail className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-stone-900">
+                  आधिकारिक ईमेल
+                </h4>
+                <p className="text-xs text-stone-500">
+                  {siteMeta.officialEmail}
+                </p>
+              </div>
+            </div>
+            <ExternalLink className="w-4 h-4 text-stone-400 opacity-80" />
+          </a>
+
         </div>
 
         {/* Footer info */}
